@@ -1,11 +1,10 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Misbah Zafar | Web Technology</title>
+    <title>Misbah Zafar | Web Technology Labs</title>
 
     <style>
         * {
@@ -16,29 +15,31 @@
 
         body {
             font-family: Arial, sans-serif;
-            background: #f1f5f9;
-            color: #1e293b;
-            line-height: 1.6;
+            background: linear-gradient(135deg, #141e30, #243b55);
+            color: white;
+            min-height: 100vh;
         }
 
         header {
-            background: linear-gradient(135deg, #4f46e5, #9333ea);
-            color: white;
+            background: #101827;
+            padding: 25px 15px;
             text-align: center;
-            padding: 45px 20px;
+            border-bottom: 3px solid #00d4ff;
         }
 
         header h1 {
-            font-size: 40px;
-            margin-bottom: 8px;
+            font-size: 36px;
+            color: #00d4ff;
+            margin-bottom: 10px;
         }
 
         header p {
-            font-size: 18px;
+            font-size: 17px;
+            color: #eeeeee;
         }
 
         nav {
-            background: #1e1b4b;
+            background: #1c2a40;
             padding: 15px;
             text-align: center;
         }
@@ -46,109 +47,102 @@
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 18px;
-            font-weight: bold;
+            margin: 0 15px;
+            font-size: 16px;
         }
 
         nav a:hover {
-            color: #c4b5fd;
+            color: #00d4ff;
         }
 
         .container {
             max-width: 1000px;
-            margin: 35px auto;
+            margin: 50px auto;
             padding: 20px;
         }
 
         .welcome {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
+            text-align: center;
             margin-bottom: 35px;
-            box-shadow: 0 4px 12px #00000010;
         }
 
         .welcome h2 {
-            color: #4f46e5;
+            font-size: 30px;
+            color: #00d4ff;
             margin-bottom: 12px;
         }
 
         .welcome p {
-            margin-bottom: 8px;
+            font-size: 17px;
+            line-height: 1.6;
         }
 
-        .labs h2 {
-            text-align: center;
-            color: #312e81;
-            font-size: 28px;
-            margin-bottom: 25px;
-        }
-
-        .lab-grid {
+        .labs {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 25px;
         }
 
         .lab-card {
             background: white;
+            color: #222;
             padding: 30px 20px;
+            border-radius: 15px;
             text-align: center;
-            border-radius: 12px;
-            border-bottom: 5px solid #7c3aed;
-            box-shadow: 0 4px 12px #00000010;
-            transition: 0.3s;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
         }
 
         .lab-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 18px #00000020;
+            transform: translateY(-8px);
         }
 
         .lab-card h3 {
-            color: #4f46e5;
-            font-size: 23px;
-            margin-bottom: 10px;
+            font-size: 24px;
+            color: #14213d;
+            margin-bottom: 15px;
         }
 
         .lab-card p {
-            color: #64748b;
-            margin-bottom: 20px;
+            font-size: 16px;
+            margin-bottom: 25px;
+            line-height: 1.5;
         }
 
         .lab-card a {
             display: inline-block;
-            background: #4f46e5;
+            background: #007bff;
             color: white;
-            padding: 10px 22px;
+            padding: 12px 22px;
             border-radius: 7px;
             text-decoration: none;
             font-weight: bold;
         }
 
         .lab-card a:hover {
-            background: #312e81;
+            background: #0056b3;
         }
 
         footer {
-            background: #1e1b4b;
-            color: white;
+            background: #101827;
             text-align: center;
-            padding: 22px;
-            margin-top: 45px;
+            padding: 20px;
+            margin-top: 50px;
+            color: #eeeeee;
         }
 
         @media (max-width: 600px) {
             header h1 {
-                font-size: 30px;
-            }
-
-            .lab-grid {
-                grid-template-columns: 1fr;
+                font-size: 28px;
             }
 
             nav a {
-                margin: 0 8px;
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .container {
+                margin: 25px auto;
             }
         }
     </style>
@@ -158,64 +152,58 @@
 
     <header>
         <h1>Misbah Zafar</h1>
-        <p>Web Technology Lab Portfolio</p>
-        <p>Learning • Creating • Developing</p>
+        <p>Web Technology Practical Labs</p>
     </header>
 
     <nav>
         <a href="#home">Home</a>
         <a href="#labs">My Labs</a>
-        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
     </nav>
 
-    <main class="container" id="home">
+    <div class="container" id="home">
 
-        <section class="welcome" id="about">
-            <h2>Welcome to My Website!</h2>
-
+        <section class="welcome">
+            <h2>Welcome to My Portfolio</h2>
             <p>
-                Hello! My name is Misbah Zafar.
-                Welcome to my Web Technology Lab Portfolio.
+                Welcome to my Web Technology practical work.
+                Explore my projects by clicking the buttons below.
             </p>
-
-            <p>
-                This website contains my lab tasks and projects
-                created using HTML, CSS, and JavaScript.
-            </p>
-
-            <p>Click on a lab below to view my work.</p>
         </section>
 
         <section class="labs" id="labs">
-            <h2>My Lab Tasks</h2>
 
-            <div class="lab-grid">
+            <!-- LAB 1 -->
+            <div class="lab-card">
+                <h3>Lab 1</h3>
+                <p>Gallery Project</p>
 
-                <!-- Lab 1: Gallery Project -->
-                <div class="lab-card">
-                    <h3>Lab 1</h3>
-                    <p>Gallery Project</p>
-                    <a href="gallery.html">Open Gallery Project</a>
-                </div>
-
-                <!-- Lab 2: Login Form -->
-                <div class="lab-card">
-                    <h3>Lab 2</h3>
-                    <p>Login Form</p>
-                    <a href="login.html">Open Login Form</a>
-                </div>
-
+                <a href="https://misbahzafar910-design.github.io/Web-technology.2/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Open Gallery Project
+                </a>
             </div>
+
+            <!-- LAB 2 -->
+            <div class="lab-card">
+                <h3>Lab 2</h3>
+                <p>Login Form</p>
+
+                <a href="login.html">
+                    Open Login Form
+                </a>
+            </div>
+
         </section>
+    </div>
 
-    </main>
-
-    <footer>
-        <p>© 2026 Misbah Zafar</p>
-        <p>Web Technology | HTML, CSS & JavaScript</p>
+    <footer id="contact">
+        <p>© 2026 Misbah Zafar | Web Technology</p>
     </footer>
 
 </body>
 </html>
+```
 
 
